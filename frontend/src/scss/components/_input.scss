@@ -1,0 +1,16 @@
+.input{
+    display: flex;
+    width: 100%;
+    padding: 1.6rem 2.4rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: inherit;
+    margin: .8rem;
+    border: none;
+    background-color: var(--clr-gray-light);
+    border-radius: 4px;
+
+    &:focus{
+        outline: none;
+    }
+}

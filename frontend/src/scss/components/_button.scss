@@ -1,0 +1,30 @@
+.button{
+    font-family: inherit;
+    font-weight: 700;   
+    font-size: 2rem;
+    width: 80vw;
+    background: var(--clr-info);
+    border: none;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-around;
+    letter-spacing: .2rem;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    box-shadow: var(--box-shadow-sm);
+    margin: 1.6rem;
+    margin-bottom: 4rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .1s ease-out;
+    color: white;
+
+    &:hover{
+        transform: translateY(-2px);
+    }
+
+    &:active{
+        transform: translateY(-2px) scale(0.9);
+        box-shadow: var(--box-shadow-sm);
+    }
+}
