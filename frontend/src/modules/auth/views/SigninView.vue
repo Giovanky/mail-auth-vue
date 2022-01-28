@@ -48,23 +48,15 @@ export default {
                     email: this.email,
                     password: this.password
                 }
-                console.log(user)
                 const data = await pkappApi.post('/auth/signin', user)
                 if(!data.data.success){
                     this.setMessage({type: 'alert', message: data.data.message})
                     return
                 }
-                this.$router.push({name: ''})
+                console.log('authenticated...')
+                // this.$router.push({name: ''})
             }catch(err){
                 console.log(err)
-            }
-        }
-    },
-    watch: {
-        show() {
-            if(this.show === false) {
-                this.message = ''
-                this.type = ''
             }
         }
     }

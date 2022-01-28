@@ -40,6 +40,10 @@ export default {
         this.setMessage({type: 'alert', message: 'Rellene todos los campos'})
         return
       }
+      if(!this.email.includes('@')){
+        this.setMessage({type: 'alert', message: 'Escribe un correo valido'})
+        return
+      }
       if(this.password !== this.repass){
         this.setMessage({type: 'alert', message: 'Las contraseñas no coinciden'})
         return
@@ -55,7 +59,7 @@ export default {
           this.setMessage({type: 'alert', message: data.data.message})
           return
         }
-        await this.setMessage({type: 'info', message: data.data.message})
+        this.setMessage({type: 'info', message: data.data.message})
         this.$router.push({name: 'SigninView'})
       }catch(err){
         console.log(err)
@@ -64,7 +68,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

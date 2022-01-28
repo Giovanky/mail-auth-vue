@@ -4,8 +4,8 @@ import nodemailer from 'nodemailer'
 import jwt from 'jsonwebtoken'
 import _ from 'lodash'
 
-const nmuser = 'ari.kerluke87@ethereal.email'
-const nmpass = 'vUf3DWStkzfpaDBSQj'
+const nmuser = 'cmq2cg3pqpviwvbv@ethereal.email'
+const nmpass = 'KVyaJXxMEYWPdyvB21'
 
 class AuthController {
     public async signup(req: Request, res: Response) {
@@ -177,7 +177,7 @@ class AuthController {
                 subject: 'Pkapp Reset Password Link',
                 html: `
                     <h2>Please click on given link to reset your password</h2>
-                    <p>localhost:8080/auth/reset-pass/${token}</p>`
+                    <p>localhost:8080/auth/resetpass/${token}</p>`
             })
             console.log(info)
             if(!info){

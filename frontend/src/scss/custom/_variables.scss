@@ -1,21 +1,23 @@
 :root{
-    --clr-dark: rgb(0, 0, 0);
+    --clr-dark: #000000;
     --clr-light: #5c5c5c;
-
-    --clr-gray-light: #dbdbdb;
+    --clr-gray-light: #cacaca;
+    --clr-white: #ffffff;
 
     --font-color: var(--clr-dark);
     --font-color-light: var(--clr-light);
 
-    --clr-success: rgb(139, 240, 72);
-    --clr-alert: rgb(248, 99, 99);
+    --clr-success: #71ff6c;
+    --clr-alert: #ff0000;
     --clr-warning: rgb(248, 183, 99);
-    --clr-info: rgb(99, 188, 248);
+    --clr-info: #00aeff;
+
+    --brd-default: 1px solid var(--clr-dark);
 
     --box-shadow: 
         -1.2rem -1.2rem 1.2rem 0 rgb(255, 255, 255),
         1.2rem 1.2rem 1.2rem 0 rgba(0, 0, 0, 0.2);
     --box-shadow-sm: 
-        -.8rem -.8rem .8rem 0 rgb(255, 255, 255),
-        .8rem .8rem .8rem 0 rgba(0, 0, 0, 0.2);
+        -.4rem -.4rem .4rem 0 rgb(255, 255, 255),
+        .4rem .4rem .4rem 0 rgba(0, 0, 0, 0.2);
 }
