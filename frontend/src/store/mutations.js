@@ -11,3 +11,8 @@ export const cleanMessage = (state) => {
         state.show = false
     }
 }
+
+export const getUser = () => (state, username) => {
+    state.user = username
+    router.push({name: 'SelectorView'})
+}

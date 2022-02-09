@@ -16,7 +16,7 @@
 <script>
 import pkappApi from '@/api/pkappApi'
 import Message from '@/components/Message'
-import { mapMutations } from 'vuex'
+import { mapActions ,mapMutations } from 'vuex'
 
 export default {
     name: 'SigninView',
@@ -32,6 +32,7 @@ export default {
         Message
     },
     methods: {
+        ...mapActions(['saveUser']),
         ...mapMutations('app', ['setMessage']),
 
         async doSignin(){
@@ -54,6 +55,7 @@ export default {
                     return
                 }
                 console.log('authenticated...')
+                saveUser(user.email)
                 // this.$router.push({name: ''})
             }catch(err){
                 console.log(err)
