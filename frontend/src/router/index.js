@@ -4,6 +4,10 @@ import authRouter from '@/modules/auth/router'
 
 const routes = [
   {
+    path: '/',
+    component: () => import(/* webpackChunkName: "signinView" */ '@/modules/auth/views/SigninView.vue'),
+  },
+  {
     path: '/auth',
     ...authRouter
   },

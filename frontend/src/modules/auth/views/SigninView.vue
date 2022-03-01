@@ -32,7 +32,7 @@ export default {
         Message
     },
     methods: {
-        ...mapActions(['saveUser']),
+        ...mapActions('app', ['saveUser']),
         ...mapMutations('app', ['setMessage']),
 
         async doSignin(){
@@ -55,8 +55,10 @@ export default {
                     return
                 }
                 console.log('authenticated...')
-                saveUser(user.email)
-                // this.$router.push({name: ''})
+                
+                // pending!
+                this.saveUser(user.email)
+                this.$router.push('/selector')
             }catch(err){
                 console.log(err)
             }

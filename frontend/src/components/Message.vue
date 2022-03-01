@@ -65,5 +65,10 @@ export default {
         &-warning{
             background-color: var(--clr-warning);
         }
+
+        // refactor!
+        @media only screen and(min-width: 60em) {
+            width: 40vw;
+        }
     }
 </style>

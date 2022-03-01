@@ -4,8 +4,9 @@ import nodemailer from 'nodemailer'
 import jwt from 'jsonwebtoken'
 import _ from 'lodash'
 
-const nmuser = 'cmq2cg3pqpviwvbv@ethereal.email'
-const nmpass = 'KVyaJXxMEYWPdyvB21'
+//ethereal.email
+const nmuser = 'darian.mcglynn41@ethereal.email'
+const nmpass = 'EE1E6aYJuyaSgrJwbg'
 
 class AuthController {
     public async signup(req: Request, res: Response) {
